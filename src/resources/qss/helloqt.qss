@@ -1,0 +1,7 @@
+* {
+  outline: 0px;
+}
+
+QWidget#firstui {
+  background-color: rgb(216, 32, 32);
+}

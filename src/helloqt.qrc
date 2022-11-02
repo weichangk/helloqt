@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/helloqt">
+    <file>resources/qss/helloqt.qss</file>
+  </qresource>
+  <qresource prefix="/first">
+    <file>resources/image/icons8-steam-96.png</file>
+  </qresource>
+</RCC>
