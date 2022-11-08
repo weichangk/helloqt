@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
   StyleMgr::SetStyle(":/helloqt/resources/qss");
-  Firstui w;
+  Helloqt w;
   w.show();
   return a.exec();
 }

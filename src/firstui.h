@@ -1,6 +1,6 @@
 #pragma once
 #include "ui_firstui.h"
-#include <QWidget>
+#include <QtWidgets>
 
 class Firstui : public QWidget
 {

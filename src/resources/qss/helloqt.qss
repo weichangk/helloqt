@@ -5,3 +5,40 @@
 QWidget#firstui {
   background-color: rgb(216, 32, 32);
 }
+
+QWidget#helloqt {
+  background-color: rgb(255, 255, 255);
+}
+
+QTreeWidget#treeWidget {
+  border: none;
+  border-top: 1px solid rgb(217, 217, 217);
+  border-right: 1px solid rgb(217, 217, 217);
+  background-color: rgb(255, 255, 255);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+QTreeWidget::item#treeWidget {
+  border: none;
+  border-radius: 5px;
+}
+
+QTreeWidget::Item:hover#treeWidget {
+  color: rgb(0, 0, 0);
+  background: rgb(220, 220, 220);
+}
+
+QTreeWidget::Item:selected#treeWidget {
+  color: rgb(0, 0, 0);
+  background: rgb(220, 220, 220);
+}
+
+QTabWidget::tabWidget {
+  /* border: none; */
+  border: -1px;
+	top:-2px;
+	left: 1px;
+  border-top: 1px solid rgb(217, 217, 217);
+  background-color: rgb(255, 255, 255);
+}
