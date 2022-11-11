@@ -2,6 +2,8 @@
 #include <QtWidgets>
 #include "ui_customflowlayout.h"
 #include "customflowlayoutitem.h"
+#include "qflowlayout.h"
+#include "../common/stylemgr.h"
 
 class CustomFlowLayout : public QWidget
 {
@@ -10,8 +12,8 @@ private:
   Ui_customflowlayout *ui;
 
 private:
-  void SetFlItems();
-
+  void SetFlItemsToCustomFlowLayout();
+  void SetFlItemsToQFlowLayout();
 protected:
   void resizeEvent(QResizeEvent *event);
 

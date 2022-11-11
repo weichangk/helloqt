@@ -1,0 +1,202 @@
+QWidget#customflowlayout {
+  border: none;
+  background-color: rgb(30, 30, 30);
+}
+
+QScrollArea#scrollArea,
+#scrollArea_2 {
+  border: none;
+  background-color: rgb(30, 30, 30);
+}
+
+QWidget#scrollAreaWidgetContents,
+#scrollAreaWidgetContents_2 {
+  border: none;
+  background-color: rgb(30, 30, 30);
+}
+
+QGridLayout#gridLayout,
+#gridLayout_2 {
+  border: none;
+  background-color: rgb(30, 30, 30);
+}
+
+
+QWidget#CustomFlowLayoutItem1,
+#CustomFlowLayoutItem2,
+#CustomFlowLayoutItem3,
+#CustomFlowLayoutItem4,
+#CustomFlowLayoutItem5,
+#CustomFlowLayoutItem6,
+#CustomFlowLayoutItem7,
+#CustomFlowLayoutItem8,
+#CustomFlowLayoutItem9,
+#CustomFlowLayoutItem10,
+#CustomFlowLayoutItem11,
+#CustomFlowLayoutItem12,
+#CustomFlowLayoutItem13,
+#CustomFlowLayoutItem14,
+#CustomFlowLayoutItem15,
+#QFlowLayoutItem1,
+#QFlowLayoutItem2,
+#QFlowLayoutItem3,
+#QFlowLayoutItem4,
+#QFlowLayoutItem5,
+#QFlowLayoutItem6,
+#QFlowLayoutItem7,
+#QFlowLayoutItem8,
+#QFlowLayoutItem9,
+#QFlowLayoutItem10,
+#QFlowLayoutItem11,
+#QFlowLayoutItem12,
+#QFlowLayoutItem13,
+#QFlowLayoutItem14,
+#QFlowLayoutItem15 {
+  background-color: rgb(204, 212, 244);
+  border: none;
+  border-radius: 10px;
+}
+
+QWidget#CustomFlowLayoutItem1_Widget,
+#CustomFlowLayoutItem2_Widget,
+#CustomFlowLayoutItem3_Widget,
+#CustomFlowLayoutItem4_Widget,
+#CustomFlowLayoutItem5_Widget,
+#CustomFlowLayoutItem6_Widget,
+#CustomFlowLayoutItem7_Widget,
+#CustomFlowLayoutItem8_Widget,
+#CustomFlowLayoutItem9_Widget,
+#CustomFlowLayoutItem10_Widget,
+#CustomFlowLayoutItem11_Widget,
+#CustomFlowLayoutItem12_Widget,
+#CustomFlowLayoutItem13_Widget,
+#CustomFlowLayoutItem15_Widget,
+#CustomFlowLayoutItem14_Widget,
+#CustomFlowLayoutItem15_Widget,
+#QFlowLayoutItem1_Widget,
+#QFlowLayoutItem2_Widget,
+#QFlowLayoutItem3_Widget,
+#QFlowLayoutItem4_Widget,
+#QFlowLayoutItem5_Widget,
+#QFlowLayoutItem6_Widget,
+#QFlowLayoutItem7_Widget,
+#QFlowLayoutItem8_Widget,
+#QFlowLayoutItem9_Widget,
+#QFlowLayoutItem10_Widget,
+#QFlowLayoutItem11_Widget,
+#QFlowLayoutItem12_Widget,
+#QFlowLayoutItem13_Widget,
+#QFlowLayoutItem15_Widget,
+#QFlowLayoutItem14_Widget,
+#QFlowLayoutItem15_Widget {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+QPushButton#CustomFlowLayoutItem1_PushButton,
+#CustomFlowLayoutItem2_PushButton,
+#CustomFlowLayoutItem3_PushButton,
+#CustomFlowLayoutItem4_PushButton,
+#CustomFlowLayoutItem5_PushButton,
+#CustomFlowLayoutItem6_PushButton,
+#CustomFlowLayoutItem7_PushButton,
+#CustomFlowLayoutItem8_PushButton,
+#CustomFlowLayoutItem9_PushButton,
+#CustomFlowLayoutItem10_PushButton,
+#CustomFlowLayoutItem11_PushButton,
+#CustomFlowLayoutItem12_PushButton,
+#CustomFlowLayoutItem13_PushButton,
+#CustomFlowLayoutItem14_PushButton,
+#CustomFlowLayoutItem15_PushButton,
+#QFlowLayoutItem1_PushButton,
+#QFlowLayoutItem2_PushButton,
+#QFlowLayoutItem3_PushButton,
+#QFlowLayoutItem4_PushButton,
+#QFlowLayoutItem5_PushButton,
+#QFlowLayoutItem6_PushButton,
+#QFlowLayoutItem7_PushButton,
+#QFlowLayoutItem8_PushButton,
+#QFlowLayoutItem9_PushButton,
+#QFlowLayoutItem10_PushButton,
+#QFlowLayoutItem11_PushButton,
+#QFlowLayoutItem12_PushButton,
+#QFlowLayoutItem13_PushButton,
+#QFlowLayoutItem14_PushButton,
+#QFlowLayoutItem15_PushButton {
+  border: 0px solid gray;
+}
+
+QWidget#CustomFlowLayoutItem1_Widget,
+#QFlowLayoutItem1_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-among-us-96.png);
+}
+
+QWidget#CustomFlowLayoutItem2_Widget,
+#QFlowLayoutItem2_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-animal-crossing-96.png);
+}
+
+QWidget#CustomFlowLayoutItem3_Widget,
+#QFlowLayoutItem3_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-battle.net-96.png);
+}
+
+QWidget#CustomFlowLayoutItem4_Widget,
+#QFlowLayoutItem4_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-call-of-duty-warzone-96.png);
+}
+
+QWidget#CustomFlowLayoutItem5_Widget,
+#QFlowLayoutItem5_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-class-dojo-96.png);
+}
+
+QWidget#CustomFlowLayoutItem6_Widget,
+#QFlowLayoutItem6_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-counter-strike-96.png);
+}
+
+QWidget#CustomFlowLayoutItem7_Widget,
+#QFlowLayoutItem7_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-dailyart-96.png);
+}
+
+QWidget#CustomFlowLayoutItem8_Widget,
+#QFlowLayoutItem8_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-doom-logo-96.png);
+}
+
+QWidget#CustomFlowLayoutItem9_Widget,
+#QFlowLayoutItem9_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-dota-2-96.png);
+}
+
+QWidget#CustomFlowLayoutItem10_Widget,
+#QFlowLayoutItem10_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-duolingo-logo-96.png);
+}
+
+QWidget#CustomFlowLayoutItem11_Widget,
+#QFlowLayoutItem11_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-epic-games-96.png);
+}
+
+QWidget#CustomFlowLayoutItem12_Widget,
+#QFlowLayoutItem12_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-euro-track-simulator-2-96.png);
+}
+
+QWidget#CustomFlowLayoutItem13_Widget,
+#QFlowLayoutItem13_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-everything-96.png);
+}
+
+QWidget#CustomFlowLayoutItem14_Widget,
+#QFlowLayoutItem14_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-jurassic-world-alive-96.png);
+}
+
+QWidget#CustomFlowLayoutItem15_Widget,
+#QFlowLayoutItem15_Widget {
+  background-image: url(:/customflowlayout/resources/image/customflowlayout/icons8-steam-96.png);
+}

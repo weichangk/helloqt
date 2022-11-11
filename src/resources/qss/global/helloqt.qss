@@ -1,0 +1,38 @@
+* {
+  outline: 0px;
+}
+
+QWidget#firstui {
+  background-color: rgb(216, 32, 32);
+}
+
+QWidget#helloqt {
+  background-color: rgb(30, 30, 30);
+}
+
+QTabWidget#tabWidget {
+  background-color: rgb(30, 30, 30);
+}
+
+QTreeWidget#treeWidget {
+  border: none;
+  background-color: rgb(37, 37, 38);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+QTreeWidget::item#treeWidget {
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
+QTreeWidget::Item:hover#treeWidget {
+  color: rgb(255, 255, 255);
+  background: rgb(55, 55, 61);
+}
+
+QTreeWidget::Item:selected#treeWidget {
+  color: rgb(255, 255, 255);
+  background: rgb(55, 55, 61);
+}

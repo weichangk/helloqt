@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
-  StyleMgr::SetStyle(":/helloqt/resources/qss");
+  StyleMgr::SetStyleToAppByCssFolder(":/helloqt/resources/qss/global");
   Helloqt w;
   w.show();
   return a.exec();

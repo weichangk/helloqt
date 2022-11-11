@@ -1,8 +1,9 @@
 #pragma once
+#include <QtWidgets>
 #include "ui_helloqt.h"
 #include "home.h"
-#include "Layout/customflowlayout.h"
-#include <QtWidgets>
+#include "layouts/customflowlayout.h"
+#include "containers/scrollarea.h"
 
 class Helloqt : public QWidget
 {
@@ -16,6 +17,7 @@ private:
   Ui_helloqt *ui;
   Home *home;
   CustomFlowLayout *customflowlayout;
+  ScrollArea *scrollarea;
 private:
   void SetTree();
   void SetHome();

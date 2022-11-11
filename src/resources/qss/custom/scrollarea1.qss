@@ -1,0 +1,199 @@
+#scrollarea_scrollArea_1,
+#scrollarea_widget_1 {
+  border: none;
+  background-color: rgb(30, 30, 30);
+}
+
+/* 整个滚动条区域样式 */
+QScrollBar:vertical {
+  border: 2px solid grey;
+  background: #32CC99;
+  width: 30px;
+  /* 滑块活动区域间距，这个间距如果小于add-line和sub-line的高度或宽度滚动滑块将会覆盖add-line和sub-line，所以可以通过margin: 0px 0 0px 0;来隐藏滚动条两头区域*/
+  margin: 32px 0 32px 0;
+}
+
+/* 滑块区域样式 */
+QScrollBar::handle:vertical {
+  background: rgb(250, 3, 3);
+  border: 2px solid rgb(8, 8, 8);
+  /*无效，宽度由QScrollBar width控制*/
+  width: 10px;
+  /*可以通过margin设置滑块小于QScrollBar width，再鼠标滑过滑块样式中再重新设置margin，达到鼠标滑过滑块变大的效果*/
+  margin: 0 5px 0 5px;
+  min-height: 50px;
+  /*max-height无效!!!*/
+  max-height: 50px;
+}
+
+/* 鼠标滑过滑块样式 */
+QScrollBar::handle:vertical:hover,
+QScrollBar::handle:vertical:pressed {
+  margin: 0 1px 0 1px;
+  background: rgb(221, 81, 17);
+}
+
+/* 向上区域样式 */
+QScrollBar::sub-line:vertical {
+  border: 2px solid rgb(18, 208, 221);
+  background: #0c5a20;
+  height: 30px;
+  subcontrol-position: top;
+  subcontrol-origin: margin;
+}
+
+/* 向下区域样式 */
+QScrollBar::add-line:vertical {
+  border: 2px solid rgb(68, 218, 31);
+  background: #123026;
+  height: 30px;
+  subcontrol-position: bottom;
+  subcontrol-origin: margin;
+}
+
+/* 向上箭头样式 */
+QScrollBar::up-arrow:vertical {
+  border: 2px solid rgb(22, 12, 68);
+  width: 5;
+  height: 5;
+  background: rgb(130, 141, 165);
+}
+
+/* 向下箭头样式 */
+QScrollBar::down-arrow:vertical {
+  border: 2px solid rgb(223, 104, 104);
+  width: 5;
+  height: 5;
+  background: rgb(233, 159, 177);
+}
+
+/* 当鼠标放到向上区域的时候 */
+QScrollBar::sub-line:vertical:hover {}
+
+/* 当鼠标放到向下区域的时候 */
+QScrollBar::add-line:vertical:hover {}
+
+/* 当鼠标放到向上箭头上的时候 */
+QScrollBar::up-arrow:vertical:hover {
+  /* height:9px;width:8px; */
+  /* border-image:url(:/images/a/2.png); */
+  subcontrol-position: top;
+}
+
+/* 当鼠标放到向下箭头上的时候 */
+QScrollBar::down-arrow:vertical:hover {
+  /* height:9px;width:8px; */
+  /* border-image:url(:/images/a/4.png); */
+  subcontrol-position: bottom;
+}
+
+/* 滑块上面区域样式 */
+QScrollBar::sub-page:vertical {
+  background: rgb(117, 196, 13);
+  border: 2px solid rgb(223, 104, 104);
+}
+
+/* 滑块下面区域样式 */
+QScrollBar::add-page:vertical {
+  background: rgba(255, 102, 11);
+  border: 2px solid rgb(223, 104, 104);
+}
+
+/* ############################################ */
+/* 整个滚动条区域样式 */
+QScrollBar:horizontal {
+  border: 2px solid grey;
+  background: #32CC99;
+  height: 30px;
+  /* 滑块活动区域间距，这个间距如果小于add-line和sub-line的高度或宽度滚动滑块将会覆盖add-line和sub-line，所以可以通过margin: 0px 0 0px 0;来隐藏滚动条两头区域*/
+  margin: 0 32px 0 32px;
+}
+
+/* 滑块区域样式 */
+QScrollBar::handle:horizontal {
+  background: rgb(250, 3, 3);
+  border: 2px solid rgb(8, 8, 8);
+  /*无效，高度由QScrollBar height控制*/
+  height: 10px;
+  /*可以通过margin设置滑块小于QScrollBar height，再鼠标滑过滑块样式中再重新设置margin，达到鼠标滑过滑块变大的效果*/
+  margin: 5px 0 5px 0;
+  min-width: 50px;
+  /*max-width无效!!!*/
+  max-width: 50px;
+}
+
+/* 鼠标滑过滑块样式 */
+QScrollBar::handle:horizontal:hover,
+QScrollBar::handle:horizontal:pressed {
+  margin: 0 1px 0 1px;
+  background: rgb(221, 81, 17);
+}
+
+/* 向左区域样式 */
+QScrollBar::sub-line:horizontal {
+  border: 2px solid rgb(18, 208, 221);
+  background: #0c5a20;
+  width: 30px;
+  /*sub-line:horizontal要设置height但是sub-line:vertical却不要设置width！！！*/
+  height: 20px;
+  subcontrol-position: left;
+  subcontrol-origin: margin;
+}
+
+/* 向右区域样式 */
+QScrollBar::add-line:horizontal {
+  border: 2px solid rgb(68, 218, 31);
+  background: #123026;
+  width: 30px;
+  height: 20px;
+  subcontrol-position: right;
+  subcontrol-origin: margin;
+}
+
+/* 向左箭头样式 */
+QScrollBar::left-arrow:horizontal {
+  border: 2px solid rgb(22, 12, 68);
+  width: 5;
+  height: 5;
+  background: rgb(130, 141, 165);
+}
+
+/* 向右箭头样式 */
+QScrollBar::right-arrow:horizontal {
+  border: 2px solid rgb(223, 104, 104);
+  width: 5;
+  height: 5;
+  background: rgb(233, 159, 177);
+}
+
+/* 当鼠标放到向左区域的时候 */
+QScrollBar::sub-line:horizontal:hover {}
+
+/* 当鼠标放到向右区域的时候 */
+QScrollBar::add-line:horizontal:hover {}
+
+/* 当鼠标放到向左箭头上的时候 */
+QScrollBar::left-arrow:horizontal:hover {
+  /* height:9px;width:8px; */
+  /* border-image:url(:/images/a/2.png); */
+  subcontrol-position: top;
+}
+
+/* 当鼠标放到向右箭头上的时候 */
+QScrollBar::right-arrow:horizontal:hover {
+  /* height:9px;width:8px; */
+  /* border-image:url(:/images/a/4.png); */
+  subcontrol-position: bottom;
+}
+
+/* 滑块左面区域样式 */
+QScrollBar::sub-page:horizontal {
+  background: rgb(117, 196, 13);
+  border: 2px solid rgb(223, 104, 104);
+}
+
+/* 滑块右面区域样式 */
+QScrollBar::add-page:horizontal {
+  background: rgba(255, 102, 11);
+  border: 2px solid rgb(223, 104, 104);
+}

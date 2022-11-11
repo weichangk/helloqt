@@ -1,0 +1,53 @@
+#scrollarea_scrollArea_4,
+#scrollarea_widget_4 {
+  border: none;
+  background-color: rgb(30, 30, 30);
+}
+
+/* 整个垂直滚动条区域样式 */
+#scrollarea_scrollAreaWidgetContents::QScrollBar:vertical {
+  border: none;
+  background: rgb(30, 30, 30);
+  width: 10px;
+  margin: 0px 0 0px 0;
+}
+
+/* 滑块区域样式 */
+#scrollarea_scrollAreaWidgetContents::QScrollBar::handle:vertical {
+  background: #32CC99;
+  min-height: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* 鼠标滑过滑块样式 */
+#scrollarea_scrollAreaWidgetContents::QScrollBar::handle:vertical:hover,
+#scrollarea_scrollAreaWidgetContents::QScrollBar::handle:vertical:pressed {
+  background: rgb(79, 79, 79);
+}
+
+/* 向上箭头样式 */
+QScrollBar::add-line:vertical {
+  border: 0px solid grey;
+  background: #32CC99;
+  height: 0px;
+  subcontrol-position: bottom;
+  subcontrol-origin: margin;
+}
+
+/* 向下箭头样式 */
+QScrollBar::sub-line:vertical {
+  border: 0px solid grey;
+  background: #32CC99;
+  height: 0px;
+  subcontrol-position: top;
+  subcontrol-origin: margin;
+}
+
+/* 滚动条上面和下面区域样式 */
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+  background: none;
+  width: 0px;
+  height: 0px;
+}

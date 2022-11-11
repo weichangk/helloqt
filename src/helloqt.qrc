@@ -1,8 +1,37 @@
 <RCC>
   <qresource prefix="/helloqt">
-    <file>resources/qss/helloqt.qss</file>
+    <file>resources/qss/global/helloqt.qss</file>
+    <file>resources/qss/global/scrollarea.qss</file>
+
+    <file>resources/qss/custom/home.qss</file>
+    <file>resources/qss/custom/customflowlayout.qss</file>
+    <file>resources/qss/custom/scrollarea1.qss</file>
+    <file>resources/qss/custom/scrollarea2.qss</file>
+    <file>resources/qss/custom/scrollarea3.qss</file>
+    <file>resources/qss/custom/scrollarea4.qss</file>
+    <file>resources/qss/custom/scrollarea5.qss</file>
   </qresource>
   <qresource prefix="/first">
     <file>resources/image/icons8-steam-96.png</file>
+  </qresource>
+  <qresource prefix="/customflowlayout">
+    <file>resources/image/customflowlayout/icons8-age-of-empires-3-96.png</file>
+    <file>resources/image/customflowlayout/icons8-among-us-96.png</file>
+    <file>resources/image/customflowlayout/icons8-animal-crossing-96.png</file>
+    <file>resources/image/customflowlayout/icons8-battle.net-96.png</file>
+    <file>resources/image/customflowlayout/icons8-call-of-duty-warzone-96.png</file>
+    <file>resources/image/customflowlayout/icons8-class-dojo-96.png</file>
+    <file>resources/image/customflowlayout/icons8-counter-strike-96.png</file>
+    <file>resources/image/customflowlayout/icons8-dailyart-96.png</file>
+    <file>resources/image/customflowlayout/icons8-doom-logo-96.png</file>
+    <file>resources/image/customflowlayout/icons8-dota-2-96.png</file>
+    <file>resources/image/customflowlayout/icons8-duolingo-logo-96.png</file>
+    <file>resources/image/customflowlayout/icons8-epic-games-96.png</file>
+    <file>resources/image/customflowlayout/icons8-euro-track-simulator-2-96.png</file>
+    <file>resources/image/customflowlayout/icons8-everything-96.png</file>
+    <file>resources/image/customflowlayout/icons8-jurassic-world-alive-96.png</file>
+    <file>resources/image/customflowlayout/icons8-nvidia-96.png</file>
+    <file>resources/image/customflowlayout/icons8-socratic-96.png</file>
+    <file>resources/image/customflowlayout/icons8-steam-96.png</file>
   </qresource>
 </RCC>

@@ -1,6 +1,7 @@
 #pragma once
 #include "ui_home.h"
 #include <QtWidgets>
+#include "common/stylemgr.h"
 
 class Home : public QWidget
 {

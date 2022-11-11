@@ -6,7 +6,7 @@ Helloqt::Helloqt(QWidget *parent) : QWidget(parent), ui(new Ui_helloqt)
   ui->treeWidget->setHeaderHidden(true);
   ui->tabWidget->tabBar()->hide();
   // 去边框
-  // ui->tabWidget->setDocumentMode(true);
+  ui->tabWidget->setDocumentMode(true);
 
   SetTree();
   SetHome();
@@ -34,6 +34,11 @@ void Helloqt::SetTree()
   layouts_form_layout->setText(0, tr("QFormLayout"));
   QTreeWidgetItem *layouts_flow_layout = new QTreeWidgetItem(layoutsItem);
   layouts_flow_layout->setText(0, tr("CustomFlowLayout"));
+
+  QTreeWidgetItem *containeritem = new QTreeWidgetItem(ui->treeWidget);
+  containeritem->setText(0, tr("Containers"));
+  QTreeWidgetItem *scrollarea = new QTreeWidgetItem(containeritem);
+  scrollarea->setText(0, tr("ScrollArea"));
 }
 
 void Helloqt::SetHome()
@@ -50,15 +55,6 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
     qDebug("xxxxx");
     ui->tabWidget->setCurrentWidget(home);
   }
-  // else if (item->text(column) == tr("QBoxLayout"))
-  // {
-  //   if (qboxlayouttestui == nullptr)
-  //   {
-  //     qboxlayouttestui = new QBoxLayoutTestUI(ui.tabWidget);
-  //     ui.tabWidget->addTab(qboxlayouttestui, tr("QBoxLayout"));
-  //   }
-  //   ui.tabWidget->setCurrentWidget(qboxlayouttestui);
-  // }
   else if (item->text(column) == tr("CustomFlowLayout"))
   {
     if (customflowlayout == nullptr)
@@ -67,5 +63,14 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
       ui->tabWidget->addTab(customflowlayout, tr("CustomFlowLayout"));
     }
     ui->tabWidget->setCurrentWidget(customflowlayout);
+  }
+  else if(item->text(column) == tr("ScrollArea"))
+  {
+    if (scrollarea == nullptr)
+    {
+      scrollarea = new ScrollArea(ui->tabWidget);
+      ui->tabWidget->addTab(scrollarea, tr("ScrollArea"));
+    }
+    ui->tabWidget->setCurrentWidget(scrollarea);
   }
 }
