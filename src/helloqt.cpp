@@ -26,6 +26,8 @@ void Helloqt::SetTree()
 
   QTreeWidgetItem *layoutsItem = new QTreeWidgetItem(ui->treeWidget);
   layoutsItem->setText(0, tr("Layouts"));
+  QTreeWidgetItem *layouts_splitter = new QTreeWidgetItem(layoutsItem);
+  layouts_splitter->setText(0, tr("Splitter"));
   QTreeWidgetItem *layouts_vertical_layout = new QTreeWidgetItem(layoutsItem);
   layouts_vertical_layout->setText(0, tr("QBoxLayout"));
   QTreeWidgetItem *layouts_grid_layout = new QTreeWidgetItem(layoutsItem);
@@ -39,6 +41,8 @@ void Helloqt::SetTree()
   containeritem->setText(0, tr("Containers"));
   QTreeWidgetItem *scrollarea = new QTreeWidgetItem(containeritem);
   scrollarea->setText(0, tr("ScrollArea"));
+  QTreeWidgetItem *dockwidget = new QTreeWidgetItem(containeritem);
+  dockwidget->setText(0, tr("DockWidget"));
 }
 
 void Helloqt::SetHome()
@@ -52,7 +56,7 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
 {
   if (item->text(column) == tr("Home"))
   {
-    qDebug("xxxxx");
+    qDebug("Home");
     ui->tabWidget->setCurrentWidget(home);
   }
   else if (item->text(column) == tr("CustomFlowLayout"))
@@ -64,7 +68,16 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
     }
     ui->tabWidget->setCurrentWidget(customflowlayout);
   }
-  else if(item->text(column) == tr("ScrollArea"))
+  else if (item->text(column) == tr("Splitter"))
+  {
+    if (splitter == nullptr)
+    {
+      splitter = new Splitter(ui->tabWidget);
+      ui->tabWidget->addTab(splitter, tr("Splitter"));
+    }
+    ui->tabWidget->setCurrentWidget(splitter);
+  }
+  else if (item->text(column) == tr("ScrollArea"))
   {
     if (scrollarea == nullptr)
     {
@@ -72,5 +85,14 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
       ui->tabWidget->addTab(scrollarea, tr("ScrollArea"));
     }
     ui->tabWidget->setCurrentWidget(scrollarea);
+  }
+  else if (item->text(column) == tr("DockWidget"))
+  {
+    if (dockwidget == nullptr)
+    {
+      dockwidget = new DockWidget(ui->tabWidget);
+      ui->tabWidget->addTab(dockwidget, tr("DockWidget"));
+    }
+    ui->tabWidget->setCurrentWidget(dockwidget);
   }
 }

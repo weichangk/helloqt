@@ -1,0 +1,24 @@
+QWidget#splitter {
+  border: none;
+  background-color: rgb(30, 30, 30);
+}
+
+QWidget#splitter_3_widget_1 {
+  border: none;
+  background-color: rgb(41, 102, 126);
+}
+
+QWidget#splitter_2_widget_1 {
+  border: none;
+  background-color: rgb(41, 64, 126);
+}
+
+QWidget#splitter_2_widget_2 {
+  border: none;
+  background-color: rgb(14, 71, 230);
+}
+
+QWidget#splitter_2_widget_3 {
+  border: none;
+  background-color: rgb(159, 177, 223);
+}

@@ -10,11 +10,12 @@ QScrollBar:vertical {
   width: 10px;
   margin: 0px 0 0px 0;
 }
+
 /* 整个水平滚动条区域样式 */
 QScrollBar:horizontal {
   border: none;
   background: rgb(30, 30, 30);
-  width: 10px;
+  height: 10px;
   margin: 0px 0 0px 0;
 }
 
@@ -26,6 +27,7 @@ QScrollBar::handle:vertical {
   border: none;
   /* margin: 0 1px 0 1px; */
 }
+
 QScrollBar::handle:horizontal {
   background: rgb(66, 66, 66);
   min-height: 20px;
@@ -39,6 +41,7 @@ QScrollBar::handle:vertical:pressed {
   background: rgb(79, 79, 79);
   /* margin: 0 0 0 0; */
 }
+
 QScrollBar::handle:horizontal:hover,
 QScrollBar::handle:horizontal:pressed {
   background: rgb(79, 79, 79);
@@ -52,6 +55,7 @@ QScrollBar::add-line:vertical {
   subcontrol-position: bottom;
   subcontrol-origin: margin;
 }
+
 /* 向右箭头样式 */
 QScrollBar::add-line:horizontal {
   border: none;
@@ -69,6 +73,7 @@ QScrollBar::sub-line:vertical {
   subcontrol-position: top;
   subcontrol-origin: margin;
 }
+
 /* 向左箭头样式 */
 QScrollBar::sub-line:horizontal {
   border: none;
@@ -85,6 +90,7 @@ QScrollBar::add-page:vertical {
   width: 0px;
   height: 0px;
 }
+
 /* 滚动条左面和右面区域样式 */
 QScrollBar::sub-page:horizontal,
 QScrollBar::add-page:horizontal {

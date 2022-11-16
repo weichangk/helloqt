@@ -1,5 +1,4 @@
-#scrollarea_scrollArea_3,
-#scrollarea_widget_3 {
+QWidget#splitter {
   border: none;
   background-color: rgb(30, 30, 30);
 }

@@ -19,7 +19,7 @@ QScrollBar::handle:vertical {
   border: 2px solid rgb(8, 8, 8);
   /*无效，宽度由QScrollBar width控制*/
   width: 10px;
-  /*可以通过margin设置滑块小于QScrollBar width，再鼠标滑过滑块样式中再重新设置margin，达到鼠标滑过滑块变大的效果*/
+  /*可以通过margin设置滑块小于QScrollBar width，再鼠标滑过滑块样式中再重新设置margin，达到鼠标滑过滑块变大的效果，但是圆角设置border-radius不生效了！！！*/
   margin: 0 5px 0 5px;
   min-height: 50px;
   /*max-height无效!!!*/

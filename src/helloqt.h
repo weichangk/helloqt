@@ -3,7 +3,9 @@
 #include "ui_helloqt.h"
 #include "home.h"
 #include "layouts/customflowlayout.h"
+#include "layouts/splitter.h"
 #include "containers/scrollarea.h"
+#include "containers/dockwidget.h"
 
 class Helloqt : public QWidget
 {
@@ -14,10 +16,13 @@ public:
   ~Helloqt();
 
 private:
-  Ui_helloqt *ui;
-  Home *home;
-  CustomFlowLayout *customflowlayout;
-  ScrollArea *scrollarea;
+  Ui_helloqt *ui = nullptr;
+  Home *home = nullptr;
+  Splitter *splitter = nullptr;
+  CustomFlowLayout *customflowlayout = nullptr;
+  ScrollArea *scrollarea = nullptr;
+  DockWidget *dockwidget = nullptr;
+
 private:
   void SetTree();
   void SetHome();

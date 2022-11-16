@@ -8,8 +8,7 @@
     <file>resources/qss/custom/scrollarea1.qss</file>
     <file>resources/qss/custom/scrollarea2.qss</file>
     <file>resources/qss/custom/scrollarea3.qss</file>
-    <file>resources/qss/custom/scrollarea4.qss</file>
-    <file>resources/qss/custom/scrollarea5.qss</file>
+    <file>resources/qss/custom/splitter.qss</file>
   </qresource>
   <qresource prefix="/first">
     <file>resources/image/icons8-steam-96.png</file>
@@ -33,5 +32,11 @@
     <file>resources/image/customflowlayout/icons8-nvidia-96.png</file>
     <file>resources/image/customflowlayout/icons8-socratic-96.png</file>
     <file>resources/image/customflowlayout/icons8-steam-96.png</file>
+  </qresource>
+  <qresource prefix="/scrollarea">
+    <file>resources/image/scrollarea/arrowdown.png</file>
+    <file>resources/image/scrollarea/arrow-left.png</file>
+    <file>resources/image/scrollarea/arrowright.png</file>
+    <file>resources/image/scrollarea/arrowup.png</file>
   </qresource>
 </RCC>
