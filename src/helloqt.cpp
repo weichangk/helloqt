@@ -41,8 +41,15 @@ void Helloqt::SetTree()
   containeritem->setText(0, tr("Containers"));
   QTreeWidgetItem *scrollarea = new QTreeWidgetItem(containeritem);
   scrollarea->setText(0, tr("ScrollArea"));
+
   QTreeWidgetItem *dockwidget = new QTreeWidgetItem(containeritem);
   dockwidget->setText(0, tr("DockWidget"));
+  QTreeWidgetItem *addDockWidget = new QTreeWidgetItem(dockwidget);
+  addDockWidget->setText(0, tr("AddDockWidget"));
+  QTreeWidgetItem *splitDockWidget = new QTreeWidgetItem(dockwidget);
+  splitDockWidget->setText(0, tr("SplitDockWidget"));
+  QTreeWidgetItem *tabifyDockWidget = new QTreeWidgetItem(dockwidget);
+  tabifyDockWidget->setText(0, tr("TabifyDockWidget"));
 }
 
 void Helloqt::SetHome()
@@ -86,7 +93,7 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
     }
     ui->tabWidget->setCurrentWidget(scrollarea);
   }
-  else if (item->text(column) == tr("DockWidget"))
+  else if (item->text(column) == tr("AddDockWidget") || item->text(column) == tr("SplitDockWidget") || item->text(column) == tr("TabifyDockWidget"))
   {
     if (dockwidget == nullptr)
     {
@@ -94,5 +101,17 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
       ui->tabWidget->addTab(dockwidget, tr("DockWidget"));
     }
     ui->tabWidget->setCurrentWidget(dockwidget);
+    if (item->text(column) == tr("AddDockWidget"))
+    {
+      dockwidget->ShowDockLayout(1);
+    }
+    else if (item->text(column) == tr("SplitDockWidget"))
+    {
+      dockwidget->ShowDockLayout(2);
+    }
+    else if (item->text(column) == tr("TabifyDockWidget"))
+    {
+      dockwidget->ShowDockLayout(3);
+    }
   }
 }

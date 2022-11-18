@@ -1,4 +1,142 @@
-QWidget#splitter {
+QWidget#dockwidget {
   border: none;
   background-color: rgb(30, 30, 30);
+}
+
+QDockWidget#dockwidget_dockWidget_1,
+#dockwidget_dockWidgetContents_1 {
+  border: none;
+  background-color: rgb(189, 79, 60);
+}
+
+QDockWidget#dockwidget_dockWidget_2,
+#dockwidget_dockWidgetContents_2 {
+  border: none;
+  background-color: rgb(189, 133, 60);
+}
+
+QDockWidget#dockwidget_dockWidget_3,
+#dockwidget_dockWidgetContents_3 {
+  border: none;
+  background-color: rgb(161, 189, 60);
+}
+
+QDockWidget#dockwidget_dockWidget_4,
+#dockwidget_dockWidgetContents_4 {
+  border: none;
+  background-color: rgb(60, 189, 109);
+}
+
+QDockWidget#dockwidget_dockWidget_5,
+#dockwidget_dockWidgetContents_5 {
+  border: none;
+  background-color: rgb(60, 152, 189);
+}
+
+QDockWidget#dockwidget_dockWidget_6,
+#dockwidget_dockWidgetContents_6 {
+  border: none;
+  background-color: rgb(62, 60, 189);
+}
+
+QDockWidget#dockwidget_dockWidget_7,
+#dockwidget_dockWidgetContents_7 {
+  border: none;
+  background-color: rgb(105, 60, 189);
+}
+
+QDockWidget#dockwidget_dockWidget_8,
+#dockwidget_dockWidgetContents_8 {
+  border: none;
+  background-color: rgb(178, 60, 189);
+}
+
+QDockWidget#dockwidget_dockWidget_9,
+#dockwidget_dockWidgetContents_9 {
+  border: none;
+  background-color: rgb(189, 60, 120);
+}
+
+
+/* QDockWidget之间的间距调整 */
+QMainWindow::separator {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  /* 如果将两个QDockWidget之间的间距调为0后，QDockWidget将没办法拉拽，所以留出一点小缝隙 */
+  padding: 0, 1px;
+}
+
+QDockWidget {
+  color: white;
+}
+
+/* 标题设置 */
+QDockWidget::title {
+  /* 标题字体在这里设置无效，要在QDockWidget中设置！ */
+  /* color: white; */
+  text-align: left;
+  /* 不设置背景色时标题栏下方有空隙！ */
+  background: rgb(45, 45, 48);
+  padding-left: 5px;
+}
+
+/* 按钮图标 */
+QDockWidget {
+  border: 1px solid rgb(45, 45, 48);
+  titlebar-close-icon: url(:/dockwidget/resources/image/dockwidget/close.png);
+  titlebar-normal-icon: url(:/dockwidget/resources/image/dockwidget/normal.png);
+}
+
+QDockWidget::close-button,
+QDockWidget::float-button {
+  /* 不设置border则hover、pressed时的background颜色不生效！ */
+  border: 1px solid transparent;
+  background: rgb(45, 45, 48);
+  /* 会影响标题栏高度 */
+  /* padding: 0px; */
+  /* 不起作用！ */
+  icon-size: 32px;
+}
+
+QDockWidget::close-button:hover,
+QDockWidget::float-button:hover {
+  color: rgb(0, 151, 251);
+  background: rgb(62, 62, 64);
+}
+
+QDockWidget::close-button:pressed,
+QDockWidget::float-button:pressed {
+  background: rgb(37, 37, 38);
+  padding: 1px -1px -1px 1px;
+}
+
+
+/* tabifyDockWidgets TabBar设置*/
+QTabBar {
+  qproperty-drawBase: 0;
+  background: rgb(45, 45, 48);
+}
+
+QTabBar::tab {
+  color: white;
+  background: rgb(45, 45, 48);
+  padding: 4px;
+  border: 1px solid transparent;
+}
+
+QTabBar::tab:hover {
+  color: rgb(0, 151, 251);
+}
+
+QTabBar::tab:selected {
+  color: rgb(0, 151, 251);
+  background: rgb(37, 37, 38);
+  border-bottom-color: rgb(0, 151, 251);
+}
+
+/* 当tab个数大于一定个数时，会出现如下图左侧白线所示，这个是Qt自带的，作用是点击回到第一个tab，但是显示不好看，这里隐藏掉 */
+QTabBar::tear {
+  width: 0px;
+  border: none;
 }

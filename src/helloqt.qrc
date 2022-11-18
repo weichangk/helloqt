@@ -9,6 +9,7 @@
     <file>resources/qss/custom/scrollarea2.qss</file>
     <file>resources/qss/custom/scrollarea3.qss</file>
     <file>resources/qss/custom/splitter.qss</file>
+    <file>resources/qss/custom/dockwidget.qss</file>
   </qresource>
   <qresource prefix="/first">
     <file>resources/image/icons8-steam-96.png</file>
@@ -38,5 +39,9 @@
     <file>resources/image/scrollarea/arrow-left.png</file>
     <file>resources/image/scrollarea/arrowright.png</file>
     <file>resources/image/scrollarea/arrowup.png</file>
+  </qresource>
+  <qresource prefix="/dockwidget">
+    <file>resources/image/dockwidget/close.png</file>
+    <file>resources/image/dockwidget/normal.png</file>
   </qresource>
 </RCC>
