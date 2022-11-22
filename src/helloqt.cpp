@@ -24,32 +24,42 @@ void Helloqt::SetTree()
   QTreeWidgetItem *home = new QTreeWidgetItem(ui->treeWidget);
   home->setText(0, tr("Home"));
 
+  // layouts
   QTreeWidgetItem *layoutsItem = new QTreeWidgetItem(ui->treeWidget);
   layoutsItem->setText(0, tr("Layouts"));
+
   QTreeWidgetItem *layouts_splitter = new QTreeWidgetItem(layoutsItem);
   layouts_splitter->setText(0, tr("Splitter"));
+
   QTreeWidgetItem *layouts_vertical_layout = new QTreeWidgetItem(layoutsItem);
   layouts_vertical_layout->setText(0, tr("QBoxLayout"));
   QTreeWidgetItem *layouts_grid_layout = new QTreeWidgetItem(layoutsItem);
+
   layouts_grid_layout->setText(0, tr("QGridLayout"));
   QTreeWidgetItem *layouts_form_layout = new QTreeWidgetItem(layoutsItem);
+
   layouts_form_layout->setText(0, tr("QFormLayout"));
   QTreeWidgetItem *layouts_flow_layout = new QTreeWidgetItem(layoutsItem);
   layouts_flow_layout->setText(0, tr("CustomFlowLayout"));
 
+  // containers
   QTreeWidgetItem *containeritem = new QTreeWidgetItem(ui->treeWidget);
   containeritem->setText(0, tr("Containers"));
-  QTreeWidgetItem *scrollarea = new QTreeWidgetItem(containeritem);
-  scrollarea->setText(0, tr("ScrollArea"));
 
-  QTreeWidgetItem *dockwidget = new QTreeWidgetItem(containeritem);
-  dockwidget->setText(0, tr("DockWidget"));
-  QTreeWidgetItem *addDockWidget = new QTreeWidgetItem(dockwidget);
-  addDockWidget->setText(0, tr("AddDockWidget"));
-  QTreeWidgetItem *splitDockWidget = new QTreeWidgetItem(dockwidget);
-  splitDockWidget->setText(0, tr("SplitDockWidget"));
-  QTreeWidgetItem *tabifyDockWidget = new QTreeWidgetItem(dockwidget);
-  tabifyDockWidget->setText(0, tr("TabifyDockWidget"));
+  QTreeWidgetItem *container_scrollarea = new QTreeWidgetItem(containeritem);
+  container_scrollarea->setText(0, tr("ScrollArea"));
+
+  QTreeWidgetItem *container_dock = new QTreeWidgetItem(containeritem);
+  container_dock->setText(0, tr("DockWidget"));
+  QTreeWidgetItem *dockwidget_add = new QTreeWidgetItem(container_dock);
+  dockwidget_add->setText(0, tr("AddDockWidget"));
+  QTreeWidgetItem *dockwidget_split = new QTreeWidgetItem(container_dock);
+  dockwidget_split->setText(0, tr("SplitDockWidget"));
+  QTreeWidgetItem *dockwidget_tabify = new QTreeWidgetItem(container_dock);
+  dockwidget_tabify->setText(0, tr("TabifyDockWidget"));
+
+  QTreeWidgetItem *container_stack = new QTreeWidgetItem(containeritem);
+  container_stack->setText(0, tr("StackedWidget"));
 }
 
 void Helloqt::SetHome()
@@ -113,5 +123,14 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
     {
       dockwidget->ShowDockLayout(3);
     }
+  }
+  else if(item->text(column) == tr("StackedWidget"))
+  {
+    if(stackedwidget == nullptr)
+    {
+      stackedwidget = new StackedWidget(ui->tabWidget);
+      ui->tabWidget->addTab(stackedwidget, tr("StackedWidget"));
+    }
+    ui->tabWidget->setCurrentWidget(stackedwidget);
   }
 }

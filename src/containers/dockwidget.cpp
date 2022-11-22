@@ -6,10 +6,13 @@ DockWidget::DockWidget(QWidget *parent) : QMainWindow(parent), ui(new Ui_dockwid
   ui->setupUi(this);
   StyleMgr::SetStyleToWidgetByCssFile(this, ":/helloqt/resources/qss/custom/dockwidget.qss");
 
-  // setDockNestingEnabled(true);
+  // 如果不需要MainWindow的中间窗口，整个视图都由QDockWidget组成，可以把QMainWindow的中间窗口部件去除
   // QWidget *p = takeCentralWidget();
   // if (p)
   //   delete p;
+
+  // 当不需要MainWindow的中间窗口时，发现不能拖动QDockWidget到中间，需要设置
+  // setDockNestingEnabled(true);
 
   ui->dockwidget_dockWidget_1->setWindowTitle("Dock 1");
   ui->dockwidget_dockWidget_2->setWindowTitle("Dock 2");
@@ -95,7 +98,6 @@ void DockWidget::ShowDockLayout(int type)
 
     resizeDocks({ui->dockwidget_dockWidget_8}, {300}, Qt::Horizontal);
     splitDockWidget(ui->dockwidget_dockWidget_8, ui->dockwidget_dockWidget_9, Qt::Horizontal);
-
 
     ShowDock(QList<int>() << 0 << 1 << 2 << 3 << 4 << 5 << 6 << 7 << 8);
     break;

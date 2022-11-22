@@ -6,6 +6,7 @@
 #include "layouts/splitter.h"
 #include "containers/scrollarea.h"
 #include "containers/dockwidget.h"
+#include "containers/stackedwidget.h"
 
 class Helloqt : public QWidget
 {
@@ -22,6 +23,7 @@ private:
   CustomFlowLayout *customflowlayout = nullptr;
   ScrollArea *scrollarea = nullptr;
   DockWidget *dockwidget = nullptr;
+  StackedWidget *stackedwidget = nullptr;
 
 private:
   void SetTree();

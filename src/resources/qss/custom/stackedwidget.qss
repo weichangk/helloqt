@@ -1,0 +1,19 @@
+QWidget#stackedwidget {
+  border: none;
+  background-color: rgb(30, 30, 30);
+}
+
+QWidget#stackedwidget_page_1 {
+  border: none;
+  background-color: rgb(78, 190, 106);
+}
+
+QWidget#stackedwidget_page_2 {
+  border: none;
+  background-color: rgb(102, 78, 190);
+}
+
+QWidget#stackedwidget_page_a {
+  border: none;
+  background-color: rgb(190, 78, 153);
+}
