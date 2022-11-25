@@ -23,6 +23,7 @@ aux_source_directory(./src/common COMMONS)
 aux_source_directory(./src/about ABOUTS)
 aux_source_directory(./src/layouts LAYOUTS)
 aux_source_directory(./src/containers CONTAINERS)
+aux_source_directory(./src/properties PROPRETIES)
 
 set(QRC src/helloqt.qrc)
 # set(SOURCES
@@ -47,6 +48,7 @@ add_executable(${PROJECT_NAME}
   ${ABOUTS}
   ${LAYOUTS}
   ${CONTAINERS}
+  ${PROPRETIES}
 )
 
 # Needed to compile against ui and moc generated files

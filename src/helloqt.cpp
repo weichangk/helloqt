@@ -25,21 +25,16 @@ void Helloqt::SetTree()
   home->setText(0, tr("Home"));
 
   // layouts
-  QTreeWidgetItem *layoutsItem = new QTreeWidgetItem(ui->treeWidget);
-  layoutsItem->setText(0, tr("Layouts"));
+  QTreeWidgetItem *layoutsitem = new QTreeWidgetItem(ui->treeWidget);
+  layoutsitem->setText(0, tr("Layouts"));
 
-  QTreeWidgetItem *layouts_splitter = new QTreeWidgetItem(layoutsItem);
+  QTreeWidgetItem *layouts_layouts = new QTreeWidgetItem(layoutsitem);
+  layouts_layouts->setText(0, tr("Ver Hor Grid Form"));
+
+  QTreeWidgetItem *layouts_splitter = new QTreeWidgetItem(layoutsitem);
   layouts_splitter->setText(0, tr("Splitter"));
 
-  QTreeWidgetItem *layouts_vertical_layout = new QTreeWidgetItem(layoutsItem);
-  layouts_vertical_layout->setText(0, tr("QBoxLayout"));
-  QTreeWidgetItem *layouts_grid_layout = new QTreeWidgetItem(layoutsItem);
-
-  layouts_grid_layout->setText(0, tr("QGridLayout"));
-  QTreeWidgetItem *layouts_form_layout = new QTreeWidgetItem(layoutsItem);
-
-  layouts_form_layout->setText(0, tr("QFormLayout"));
-  QTreeWidgetItem *layouts_flow_layout = new QTreeWidgetItem(layoutsItem);
+  QTreeWidgetItem *layouts_flow_layout = new QTreeWidgetItem(layoutsitem);
   layouts_flow_layout->setText(0, tr("CustomFlowLayout"));
 
   // containers
@@ -60,6 +55,13 @@ void Helloqt::SetTree()
 
   QTreeWidgetItem *container_stack = new QTreeWidgetItem(containeritem);
   container_stack->setText(0, tr("StackedWidget"));
+
+  // properties
+  QTreeWidgetItem *propertiesitem = new QTreeWidgetItem(ui->treeWidget);
+  propertiesitem->setText(0, tr("Properties"));
+  QTreeWidgetItem *properties_sizetest = new QTreeWidgetItem(propertiesitem);
+  properties_sizetest->setText(0, tr("SizeTest"));
+
 }
 
 void Helloqt::SetHome()
@@ -75,6 +77,15 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
   {
     qDebug("Home");
     ui->tabWidget->setCurrentWidget(home);
+  }
+  else if(item->text(column) == tr("Ver Hor Grid Form"))
+  {
+    if(layouts == nullptr)
+    {
+      layouts = new Layouts(ui->tabWidget);
+      ui->tabWidget->addTab(layouts, tr("Ver Hor Grid Form"));
+    }
+    ui->tabWidget->setCurrentWidget(layouts);
   }
   else if (item->text(column) == tr("CustomFlowLayout"))
   {
@@ -132,5 +143,13 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
       ui->tabWidget->addTab(stackedwidget, tr("StackedWidget"));
     }
     ui->tabWidget->setCurrentWidget(stackedwidget);
+  }
+  else if(item->text(column) == tr("SizeTest"))
+  {
+    if(sizetest == nullptr)
+    {
+      sizetest = new SizeTest();
+    }
+    sizetest->show();
   }
 }

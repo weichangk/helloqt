@@ -4,9 +4,11 @@
 #include "home.h"
 #include "layouts/customflowlayout.h"
 #include "layouts/splitter.h"
+#include "layouts/layouts.h"
 #include "containers/scrollarea.h"
 #include "containers/dockwidget.h"
 #include "containers/stackedwidget.h"
+#include "properties/sizetest.h"
 
 class Helloqt : public QWidget
 {
@@ -21,9 +23,11 @@ private:
   Home *home = nullptr;
   Splitter *splitter = nullptr;
   CustomFlowLayout *customflowlayout = nullptr;
+  Layouts *layouts = nullptr;
   ScrollArea *scrollarea = nullptr;
   DockWidget *dockwidget = nullptr;
   StackedWidget *stackedwidget = nullptr;
+  SizeTest *sizetest = nullptr;
 
 private:
   void SetTree();
