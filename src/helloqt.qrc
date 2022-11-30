@@ -11,6 +11,7 @@
     <file>resources/qss/custom/splitter.qss</file>
     <file>resources/qss/custom/dockwidget.qss</file>
     <file>resources/qss/custom/stackedwidget.qss</file>
+    <file>resources/qss/custom/itemviews.qss</file>
   </qresource>
   <qresource prefix="/first">
     <file>resources/image/icons8-steam-96.png</file>

@@ -62,6 +62,9 @@ void Helloqt::SetTree()
   QTreeWidgetItem *properties_sizetest = new QTreeWidgetItem(propertiesitem);
   properties_sizetest->setText(0, tr("SizeTest"));
 
+  // itemviews
+  QTreeWidgetItem *itemviewsitem = new QTreeWidgetItem(ui->treeWidget);
+  itemviewsitem->setText(0, tr("itemviews"));
 }
 
 void Helloqt::SetHome()
@@ -78,9 +81,9 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
     qDebug("Home");
     ui->tabWidget->setCurrentWidget(home);
   }
-  else if(item->text(column) == tr("Ver Hor Grid Form"))
+  else if (item->text(column) == tr("Ver Hor Grid Form"))
   {
-    if(layouts == nullptr)
+    if (layouts == nullptr)
     {
       layouts = new Layouts(ui->tabWidget);
       ui->tabWidget->addTab(layouts, tr("Ver Hor Grid Form"));
@@ -135,21 +138,30 @@ void Helloqt::NavigationToView(QTreeWidgetItem *item, int column)
       dockwidget->ShowDockLayout(3);
     }
   }
-  else if(item->text(column) == tr("StackedWidget"))
+  else if (item->text(column) == tr("StackedWidget"))
   {
-    if(stackedwidget == nullptr)
+    if (stackedwidget == nullptr)
     {
       stackedwidget = new StackedWidget(ui->tabWidget);
       ui->tabWidget->addTab(stackedwidget, tr("StackedWidget"));
     }
     ui->tabWidget->setCurrentWidget(stackedwidget);
   }
-  else if(item->text(column) == tr("SizeTest"))
+  else if (item->text(column) == tr("SizeTest"))
   {
-    if(sizetest == nullptr)
+    if (sizetest == nullptr)
     {
       sizetest = new SizeTest();
     }
     sizetest->show();
+  }
+  else if (item->text(column) == tr("itemviews"))
+  {
+    if (itemviews == nullptr)
+    {
+      itemviews = new ItemViews(ui->tabWidget);
+      ui->tabWidget->addTab(itemviews, tr("ItemViews"));
+    }
+    ui->tabWidget->setCurrentWidget(itemviews);
   }
 }

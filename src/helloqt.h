@@ -9,6 +9,7 @@
 #include "containers/dockwidget.h"
 #include "containers/stackedwidget.h"
 #include "properties/sizetest.h"
+#include "itemviews/itemviews.h"
 
 class Helloqt : public QWidget
 {
@@ -28,6 +29,7 @@ private:
   DockWidget *dockwidget = nullptr;
   StackedWidget *stackedwidget = nullptr;
   SizeTest *sizetest = nullptr;
+  ItemViews *itemviews = nullptr;
 
 private:
   void SetTree();
