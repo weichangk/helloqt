@@ -10,13 +10,13 @@ StackedWidget::StackedWidget(QWidget *parent) : QWidget(parent), ui(new Ui_stack
        << "third page";
   ui->stackedwidget_comboBox->addItems(list);
   connect(ui->stackedwidget_comboBox, QOverload<int>::of(&QComboBox::activated), ui->stackedwidget_stackedWidget, &QStackedWidget::setCurrentIndex);
-  connect(ui->stackedwidget_stackedWidget, QOverload<int>::of(&QStackedWidget::currentChanged), this, ShowCurrentChanged);
-  connect(ui->stackedwidget_stackedWidget, QOverload<int>::of(&QStackedWidget::widgetRemoved), this, ShowWidgetRemoved);
+  connect(ui->stackedwidget_stackedWidget, QOverload<int>::of(&QStackedWidget::currentChanged), this, &StackedWidget::ShowCurrentChanged);
+  connect(ui->stackedwidget_stackedWidget, QOverload<int>::of(&QStackedWidget::widgetRemoved), this, &StackedWidget::ShowWidgetRemoved);
 
-  connect(ui->stackedwidget_pushButton_1, &QPushButton::clicked, this, AddAWidget);
-  connect(ui->stackedwidget_pushButton_2, &QPushButton::clicked, this, ShowAWidget);
-  connect(ui->stackedwidget_pushButton_3, &QPushButton::clicked, this, DelAWidget);
-  connect(ui->stackedwidget_pushButton_4, &QPushButton::clicked, this, ShowIndex0);
+  connect(ui->stackedwidget_pushButton_1, &QPushButton::clicked, this, &StackedWidget::AddAWidget);
+  connect(ui->stackedwidget_pushButton_2, &QPushButton::clicked, this, &StackedWidget::ShowAWidget);
+  connect(ui->stackedwidget_pushButton_3, &QPushButton::clicked, this, &StackedWidget::DelAWidget);
+  connect(ui->stackedwidget_pushButton_4, &QPushButton::clicked, this, &StackedWidget::ShowIndex0);
 }
 
 StackedWidget::~StackedWidget()

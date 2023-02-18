@@ -1,3 +1,6 @@
 
-/.vscode
-/build
+/helloqt/build
+
+/helloqml/build
+
+/helloqmlmingw/build

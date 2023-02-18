@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "helloqml",
+			"path": "helloqml"
+		},
+		{
+			"name": "helloqmlmingw",
+			"path": "helloqmlmingw"
+		},
+		{
+			"name": "helloqt",
+			"path": "helloqt"
+		}
+	],
+	"settings": {
+		"qtConfigure.qtKitDir": "d:/Qt/5.15.2/msvc2019_64",
+		"files.associations": {
+			"qmainwindow": "cpp"
+		}
+	}
+}

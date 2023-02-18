@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "helloqml-build",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${command:cmake.launchTargetPath}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "d:/Qt/5.15.2/msvc2019_64/bin"
+                }
+            ],
+            "console": "integratedTerminal",
+            "visualizerFile": "${workspaceRoot}/qt5.natvis.xml"
+        }
+    ]
+}
