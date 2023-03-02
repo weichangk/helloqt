@@ -4,3 +4,8 @@
 /helloqml/build
 
 /helloqmlmingw/build
+
+/build-firstqtandroidonqtcreator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug
+/build-firstqtandroidonqtcreator-Qt_6_2_4_Clang_x86_64-Debug
+/build-firstqtandroidonqtcreator-Qt_6_2_4_Clang_x86_64-Profile
+/build-firstqtandroidonqtcreator-Qt_6_2_4_Clang_x86_64-Release
