@@ -1,6 +1,10 @@
 {
 	"folders": [
 		{
+			"name": "helloqtforandroid",
+			"path": "helloqtforandroid"
+		},
+		{
 			"name": "helloqml",
 			"path": "helloqml"
 		},
@@ -17,6 +21,6 @@
 		"qtConfigure.qtKitDir": "d:/Qt/5.15.2/msvc2019_64",
 		"files.associations": {
 			"qmainwindow": "cpp"
-		}
+    }
 	}
 }
