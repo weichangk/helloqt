@@ -1,5 +1,14 @@
 <RCC>
-    <qresource prefix="/">
-        <file>main.qml</file>
-    </qresource>
+  <qresource prefix="/">
+    <file>main.qml</file>
+    <file>meetqt5/main.qml</file>
+    <file>quickstart/qmlsyntax.qml</file>
+  </qresource>
+  <qresource prefix="/image">
+    <file>resources/image/background.png</file>
+    <file>resources/image/blur.png</file>
+    <file>resources/image/pinwheel.png</file>
+    <file>resources/image/pole.png</file>
+    <file>resources/image/triangle_red.png</file>
+  </qresource>
 </RCC>

@@ -9,15 +9,19 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(qrc src/helloqml.qrc)
 find_package(Qt5 COMPONENTS Widgets Core Quick REQUIRED) # Qt COMPONENTS
-aux_source_directory(./src srcs)
+aux_source_directory(./src src)
+aux_source_directory(./src/meetqt5 meetqt5)
+aux_source_directory(./src/quickstart quickstart)
 # Specify MSVC UTF-8 encoding
 add_compile_options("$<$<C_COMPILER_ID:MSVC>:/utf-8>")
 add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
 
 add_executable(${PROJECT_NAME}
-    WIN32 # If you need a terminal for debug, please comment this statement
-    ${srcs}
-    ${qrc}
+  WIN32 # If you need a terminal for debug, please comment this statement
+  ${qrc}
+  ${src}
+  ${meetqt5}
+  ${quickstart}
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Widgets Qt5::Quick) # Qt5 Shared Library
