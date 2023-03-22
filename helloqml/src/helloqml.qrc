@@ -2,7 +2,12 @@
   <qresource prefix="/">
     <file>main.qml</file>
     <file>meetqt5/main.qml</file>
-    <file>quickstart/qmlsyntax.qml</file>
+    <file>quickstart/qmlsyntaxexample.qml</file>
+    <file>quickstart/propertiesexample.qml</file>
+    <file>quickstart/scriptingexample.qml</file>
+    <file>quickstart/basicelementsexample.qml</file>
+    <file>quickstart/componentsexample.qml</file>
+    <file>quickstart/MyButton.qml</file>
   </qresource>
   <qresource prefix="/image">
     <file>resources/image/background.png</file>
