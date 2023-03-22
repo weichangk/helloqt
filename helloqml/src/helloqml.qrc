@@ -8,6 +8,14 @@
     <file>quickstart/basicelementsexample.qml</file>
     <file>quickstart/componentsexample.qml</file>
     <file>quickstart/MyButton.qml</file>
+    <file>quickstart/MyClickableImage.qml</file>
+    <file>quickstart/transformationexample.qml</file>
+    <file>quickstart/MyBlueSquare.qml</file>
+    <file>quickstart/MyBrightSquare.qml</file>
+    <file>quickstart/MyDarkSquare.qml</file>
+    <file>quickstart/MyGreenSquare.qml</file>
+    <file>quickstart/MyRedSquare.qml</file>
+    <file>quickstart/positioningelementsexample.qml</file>
   </qresource>
   <qresource prefix="/image">
     <file>resources/image/background.png</file>
@@ -15,5 +23,8 @@
     <file>resources/image/pinwheel.png</file>
     <file>resources/image/pole.png</file>
     <file>resources/image/triangle_red.png</file>
+    <file>resources/image/background.png</file>
+    <file>resources/image/circle_blue.png</file>
+    <file>resources/image/box_green.png</file>
   </qresource>
 </RCC>
