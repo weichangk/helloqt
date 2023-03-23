@@ -10,12 +10,21 @@
     <file>quickstart/MyButton.qml</file>
     <file>quickstart/MyClickableImage.qml</file>
     <file>quickstart/transformationexample.qml</file>
+
     <file>quickstart/MyBlueSquare.qml</file>
     <file>quickstart/MyBrightSquare.qml</file>
     <file>quickstart/MyDarkSquare.qml</file>
     <file>quickstart/MyGreenSquare.qml</file>
     <file>quickstart/MyRedSquare.qml</file>
     <file>quickstart/positioningelementsexample.qml</file>
+
+    <file>quickstart/MyAnchorsSquare.qml</file>
+    <file>quickstart/MyEmptyAnchorsSquare.qml</file>
+    <file>quickstart/MyBlueAnchorsSquare.qml</file>
+    <file>quickstart/MyDarkAnchorsSquare.qml</file>
+    <file>quickstart/MyGreenAnchorsSquare.qml</file>
+    <file>quickstart/layoutItemsexample.qml</file>
+
   </qresource>
   <qresource prefix="/image">
     <file>resources/image/background.png</file>
