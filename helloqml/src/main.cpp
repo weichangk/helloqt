@@ -1,17 +1,3 @@
-// #include "helloqml.h"
-
-// #include <QApplication>
-// #pragma comment(lib, "user32.lib")
-
-// int main(int argc, char *argv[])
-// {
-//     QApplication a(argc, argv);
-//     helloqml w;
-//     w.show();
-//     QString s("121345");
-//     return a.exec();
-// }
-
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
@@ -23,7 +9,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    const QUrl url(QStringLiteral("qrc:/quickstart/layoutItemsexample.qml"));
+    const QUrl url(QStringLiteral("qrc:/qmlbook/qmlbook/quickstart/inputelementsexample.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
         if (!obj && url == objUrl)

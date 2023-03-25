@@ -11,7 +11,7 @@ Window {
 
     Image {
       id: bg
-      source: "qrc:/image/resources/image/background.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/background.png"
     }
     MouseArea {
       id: backgroundClicker
@@ -27,7 +27,7 @@ Window {
     MyClickableImage {
       id: circle
       x: 84; y: 68
-      source: "qrc:/image/resources/image/circle_blue.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/circle_blue.png"
       antialiasing: true
       onClicked: {
           x += 20 //移动
@@ -37,7 +37,7 @@ Window {
     MyClickableImage {
       id: box
       x: 164; y: 68
-      source: "qrc:/image/resources/image/box_green.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/box_green.png"
       antialiasing: true
       onClicked: {
         rotation += 15
@@ -47,7 +47,7 @@ Window {
     MyClickableImage {
       id: triangle
       x: 248; y: 68
-      source: "qrc:/image/resources/image/triangle_red.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/triangle_red.png"
       antialiasing: true
       onClicked: {
         rotation += 15 //旋转

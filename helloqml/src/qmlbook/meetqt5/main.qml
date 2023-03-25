@@ -13,18 +13,18 @@ Window {
     property int rotationStep: 45
     Image {
       id: background
-      source: "qrc:/image/resources/image/background.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/background.png"
     }
     Image{
       id: pole
       x: (root.width - width)/2+2
       y: root.height - height
-      source: "qrc:/image/resources/image/pole.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/pole.png"
     }
     Image{
       id: pinwheel
       anchors.centerIn: parent
-      source: "qrc:/image/resources/image/pinwheel.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/pinwheel.png"
       // visible: false
       Behavior on rotation{
         NumberAnimation { duration: 125 }
@@ -34,7 +34,7 @@ Window {
       id: blur
       opacity: 0
       anchors.centerIn: parent
-      source: "qrc:/image/resources/image/blur.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/blur.png"
       // visible: false
       Behavior on rotation {
           NumberAnimation { duration: 125 }

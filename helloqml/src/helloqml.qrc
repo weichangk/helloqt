@@ -1,39 +1,45 @@
 <RCC>
   <qresource prefix="/">
     <file>main.qml</file>
-    <file>meetqt5/main.qml</file>
-    <file>quickstart/qmlsyntaxexample.qml</file>
-    <file>quickstart/propertiesexample.qml</file>
-    <file>quickstart/scriptingexample.qml</file>
-    <file>quickstart/basicelementsexample.qml</file>
-    <file>quickstart/componentsexample.qml</file>
-    <file>quickstart/MyButton.qml</file>
-    <file>quickstart/MyClickableImage.qml</file>
-    <file>quickstart/transformationexample.qml</file>
-
-    <file>quickstart/MyBlueSquare.qml</file>
-    <file>quickstart/MyBrightSquare.qml</file>
-    <file>quickstart/MyDarkSquare.qml</file>
-    <file>quickstart/MyGreenSquare.qml</file>
-    <file>quickstart/MyRedSquare.qml</file>
-    <file>quickstart/positioningelementsexample.qml</file>
-
-    <file>quickstart/MyAnchorsSquare.qml</file>
-    <file>quickstart/MyEmptyAnchorsSquare.qml</file>
-    <file>quickstart/MyBlueAnchorsSquare.qml</file>
-    <file>quickstart/MyDarkAnchorsSquare.qml</file>
-    <file>quickstart/MyGreenAnchorsSquare.qml</file>
-    <file>quickstart/layoutItemsexample.qml</file>
-
   </qresource>
-  <qresource prefix="/image">
-    <file>resources/image/background.png</file>
-    <file>resources/image/blur.png</file>
-    <file>resources/image/pinwheel.png</file>
-    <file>resources/image/pole.png</file>
-    <file>resources/image/triangle_red.png</file>
-    <file>resources/image/background.png</file>
-    <file>resources/image/circle_blue.png</file>
-    <file>resources/image/box_green.png</file>
+  <qresource prefix="/qmlbook">
+    <file>qmlbook/resources/image/background.png</file>
+    <file>qmlbook/resources/image/blur.png</file>
+    <file>qmlbook/resources/image/pinwheel.png</file>
+    <file>qmlbook/resources/image/pole.png</file>
+    <file>qmlbook/resources/image/triangle_red.png</file>
+    <file>qmlbook/resources/image/background.png</file>
+    <file>qmlbook/resources/image/circle_blue.png</file>
+    <file>qmlbook/resources/image/box_green.png</file>
+
+    <file>qmlbook/meetqt5/main.qml</file>
+    <file>qmlbook/quickstart/qmlsyntaxexample.qml</file>
+    <file>qmlbook/quickstart/propertiesexample.qml</file>
+    <file>qmlbook/quickstart/scriptingexample.qml</file>
+    <file>qmlbook/quickstart/basicelementsexample.qml</file>
+    <file>qmlbook/quickstart/componentsexample.qml</file>
+    <file>qmlbook/quickstart/MyButton.qml</file>
+    <file>qmlbook/quickstart/MyClickableImage.qml</file>
+    <file>qmlbook/quickstart/transformationexample.qml</file>
+
+    <file>qmlbook/quickstart/MyBlueSquare.qml</file>
+    <file>qmlbook/quickstart/MyBrightSquare.qml</file>
+    <file>qmlbook/quickstart/MyDarkSquare.qml</file>
+    <file>qmlbook/quickstart/MyGreenSquare.qml</file>
+    <file>qmlbook/quickstart/MyRedSquare.qml</file>
+    <file>qmlbook/quickstart/positioningelementsexample.qml</file>
+
+    <file>qmlbook/quickstart/MyAnchorsSquare.qml</file>
+    <file>qmlbook/quickstart/MyEmptyAnchorsSquare.qml</file>
+    <file>qmlbook/quickstart/MyBlueAnchorsSquare.qml</file>
+    <file>qmlbook/quickstart/MyDarkAnchorsSquare.qml</file>
+    <file>qmlbook/quickstart/MyGreenAnchorsSquare.qml</file>
+    <file>qmlbook/quickstart/layoutItemsexample.qml</file>
+
+    <file>qmlbook/quickstart/inputelementsexample.qml</file>
+    <file>qmlbook/quickstart/MyTLineEditV1.qml</file>
+    <file>qmlbook/quickstart/MyTLineEditV2.qml</file>
+    <file>qmlbook/quickstart/MyTTextEdit.qml</file>
   </qresource>
+
 </RCC>

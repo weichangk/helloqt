@@ -13,7 +13,7 @@ Window{
     Image{
       id: triangle
       x: (root.width - width)/2 ; y:40
-      source: "qrc:/image/resources/image/triangle_red.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/triangle_red.png"
     }
     Text{
       y:triangle.y + triangle.height + 20

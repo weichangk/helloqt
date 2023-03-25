@@ -42,13 +42,13 @@ Window{
     }
     Image{
       x: 12; y: 12
-      source: "qrc:/image/resources/image/triangle_red.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/triangle_red.png"
     }
     Image {
       x: 12+64+12; y: 12
       // width: 72
       height: 72/2
-      source: "qrc:/image/resources/image/triangle_red.png"
+      source: "qrc:/qmlbook/qmlbook/resources/image/triangle_red.png"
       fillMode: Image.PreserveAspectCrop
       clip: true
     }
