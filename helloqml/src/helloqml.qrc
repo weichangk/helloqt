@@ -42,4 +42,60 @@
     <file>qmlbook/quickstart/MyTTextEdit.qml</file>
   </qresource>
 
+  <qresource prefix="/qmlexample">
+    <file>qmlexample/resources/images/arrow.svg</file>
+    <file>qmlexample/resources/images/ball.png</file>
+    <file>qmlexample/resources/images/ball.svg</file>
+    <file>qmlexample/resources/images/book.svg</file>
+    <file>qmlexample/resources/images/clear.svg</file>
+    <file>qmlexample/resources/images/diagonal-gradient.png</file>
+    <file>qmlexample/resources/images/image-animated.gif</file>
+    <file>qmlexample/resources/images/InBack.png</file>
+    <file>qmlexample/resources/images/InBounce.png</file>
+    <file>qmlexample/resources/images/InCirc.png</file>
+    <file>qmlexample/resources/images/InCubic.png</file>
+    <file>qmlexample/resources/images/InElastic.png</file>
+    <file>qmlexample/resources/images/InExpo.png</file>
+    <file>qmlexample/resources/images/InOutBack.png</file>
+    <file>qmlexample/resources/images/InOutBounce.png</file>
+    <file>qmlexample/resources/images/InOutCirc.png</file>
+    <file>qmlexample/resources/images/InOutCubic.png</file>
+    <file>qmlexample/resources/images/InOutElastic.png</file>
+    <file>qmlexample/resources/images/InOutExpo.png</file>
+    <file>qmlexample/resources/images/InOutQuad.png</file>
+    <file>qmlexample/resources/images/InOutQuart.png</file>
+    <file>qmlexample/resources/images/InOutQuint.png</file>
+    <file>qmlexample/resources/images/InOutSine.png</file>
+    <file>qmlexample/resources/images/InQuad.png</file>
+    <file>qmlexample/resources/images/InQuart.png</file>
+    <file>qmlexample/resources/images/InQuint.png</file>
+    <file>qmlexample/resources/images/InSine.png</file>
+    <file>qmlexample/resources/images/launch.svg</file>
+    <file>qmlexample/resources/images/Linear.png</file>
+    <file>qmlexample/resources/images/OutBack.png</file>
+    <file>qmlexample/resources/images/OutBounce.png</file>
+    <file>qmlexample/resources/images/OutCirc.png</file>
+    <file>qmlexample/resources/images/OutCubic.png</file>
+    <file>qmlexample/resources/images/OutElastic.png</file>
+    <file>qmlexample/resources/images/OutExpo.png</file>
+    <file>qmlexample/resources/images/OutInBack.png</file>
+    <file>qmlexample/resources/images/OutInBounce.png</file>
+    <file>qmlexample/resources/images/OutInCirc.png</file>
+    <file>qmlexample/resources/images/OutInCubic.png</file>
+    <file>qmlexample/resources/images/OutInElastic.png</file>
+    <file>qmlexample/resources/images/OutInExpo.png</file>
+    <file>qmlexample/resources/images/OutInQuad.png</file>
+    <file>qmlexample/resources/images/OutInQuart.png</file>
+    <file>qmlexample/resources/images/OutInQuint.png</file>
+    <file>qmlexample/resources/images/OutInSine.png</file>
+    <file>qmlexample/resources/images/OutQuad.png</file>
+    <file>qmlexample/resources/images/OutQuart.png</file>
+    <file>qmlexample/resources/images/OutQuint.png</file>
+    <file>qmlexample/resources/images/OutSine.png</file>
+    <file>qmlexample/resources/images/rocket.png</file>
+    <file>qmlexample/resources/images/rocket.svg</file>
+    <file>qmlexample/resources/images/vertical-gradient.png</file>
+
+    <file>qmlexample/image/exp_image.qml</file>
+  </qresource>
 </RCC>
