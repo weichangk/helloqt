@@ -11,6 +11,11 @@
     <file>qmlbook/resources/image/background.png</file>
     <file>qmlbook/resources/image/circle_blue.png</file>
     <file>qmlbook/resources/image/box_green.png</file>
+    <file>qmlbook/resources/image/box_blue.png</file>
+    <file>qmlbook/resources/image/box_red.png</file>
+    <file>qmlbook/resources/image/rocket.png</file>
+    <file>qmlbook/resources/image/soccer_ball.png</file>
+    <file>qmlbook/resources/image/ufo.png</file>
 
     <file>qmlbook/meetqt5/main.qml</file>
     <file>qmlbook/quickstart/qmlsyntaxexample.qml</file>
@@ -40,6 +45,8 @@
     <file>qmlbook/quickstart/MyTLineEditV1.qml</file>
     <file>qmlbook/quickstart/MyTLineEditV2.qml</file>
     <file>qmlbook/quickstart/MyTTextEdit.qml</file>
+
+    <file>qmlbook/fluid/animationsexample.qml</file>
   </qresource>
 
   <qresource prefix="/qmlexample">
