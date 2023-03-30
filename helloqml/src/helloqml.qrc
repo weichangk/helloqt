@@ -2,6 +2,9 @@
   <qresource prefix="/">
     <file>main.qml</file>
   </qresource>
+  <qresource prefix="/qt5programming">
+    <file>qt5programming/main.qml</file>
+  </qresource>
   <qresource prefix="/qmlbook">
     <file>qmlbook/resources/image/background.png</file>
     <file>qmlbook/resources/image/blur.png</file>
@@ -104,5 +107,7 @@
     <file>qmlexample/resources/images/vertical-gradient.png</file>
 
     <file>qmlexample/image/exp_image.qml</file>
+
+    <file>qmlexample/menu/main.qml</file>
   </qresource>
 </RCC>
