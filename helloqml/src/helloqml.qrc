@@ -106,8 +106,11 @@
     <file>qmlexample/resources/images/rocket.svg</file>
     <file>qmlexample/resources/images/vertical-gradient.png</file>
 
+    <file>qmlexample/resources/images/home-48.png</file>
+
     <file>qmlexample/image/exp_image.qml</file>
 
+    <file>qmlexample/main.qml</file>
     <file>qmlexample/menu/main.qml</file>
   </qresource>
 </RCC>
