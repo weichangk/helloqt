@@ -2,9 +2,7 @@
   <qresource prefix="/">
     <file>main.qml</file>
   </qresource>
-  <qresource prefix="/qt5programming">
-    <file>qt5programming/main.qml</file>
-  </qresource>
+
   <qresource prefix="/qmlbook">
     <file>qmlbook/resources/image/background.png</file>
     <file>qmlbook/resources/image/blur.png</file>
@@ -53,6 +51,14 @@
   </qresource>
 
   <qresource prefix="/qmlexample">
+    <!-- qml -->
+    <file>qmlexample/image/exp_image.qml</file>
+    <file>qmlexample/main.qml</file>
+    <file>qmlexample/home.qml</file>
+    <file>qmlexample/menu/main.qml</file>
+    <file>qmlexample/graphic animation/main.qml</file>
+
+    <!-- img -->
     <file>qmlexample/resources/images/arrow.svg</file>
     <file>qmlexample/resources/images/ball.png</file>
     <file>qmlexample/resources/images/ball.svg</file>
@@ -108,9 +114,5 @@
 
     <file>qmlexample/resources/images/home-48.png</file>
 
-    <file>qmlexample/image/exp_image.qml</file>
-
-    <file>qmlexample/main.qml</file>
-    <file>qmlexample/menu/main.qml</file>
   </qresource>
 </RCC>

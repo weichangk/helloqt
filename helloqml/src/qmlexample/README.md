@@ -1,8 +1,9 @@
-# 《QT5 编程入门》学习笔记
-
 ## 图形动画基础
 - 颜色
   - 颜色-基础
+    - 使用svg颜色
+    - 使用十六进制颜色
+    - 使用Qt.rgba、Qt.hsla、Qt.darker、Qt.lighter、Qt.tint
   - 颜色-渐变（Gradient）
   - 颜色-系统调色板（SystemPalette）colorGroup: Active Inactive Disabled
 - 图片

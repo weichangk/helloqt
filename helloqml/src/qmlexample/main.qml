@@ -12,8 +12,8 @@ ApplicationWindow{
   ListModel {
     id: menuModel
     ListElement { text: "Home"; icon: "qrc:/qmlexample/qmlexample/resources/images/home-48.png" }
-    ListElement { text: "About"; icon: "qrc:/qmlexample/qmlexample/resources/images/home-48.png" }
-    ListElement { text: "Contact"; icon: "qrc:/qmlexample/qmlexample/resources/images/home-48.png" }
+    ListElement { text: "graphic animation"; icon: "qrc:/qmlexample/qmlexample/resources/images/home-48.png" }
+    ListElement { text: "menu"; icon: "qrc:/qmlexample/qmlexample/resources/images/home-48.png" }
   }
 
   GridLayout {
@@ -26,7 +26,7 @@ ApplicationWindow{
     //左侧菜单
     Rectangle {
       id: menu
-      width: 170
+      width: 250
       Layout.fillHeight: true
       // radius: 5
       ListView {
@@ -76,6 +76,13 @@ ApplicationWindow{
             anchors.fill: parent
             onClicked: {
               menuList.currentIndex = index
+              //todo：绑定model text 判断，提取到js文件
+              if(menuList.currentIndex === 0)
+                myLoader.source = "qrc:/qmlexample/qmlexample/home.qml"
+              else if(menuList.currentIndex === 1)
+                myLoader.source = "qrc:/qmlexample/qmlexample/graphic animation/main.qml"
+              else if(menuList.currentIndex === 2)
+                myLoader.source = "qrc:/qmlexample/qmlexample/menu/main.qml"
             }
           }
 
@@ -96,12 +103,12 @@ ApplicationWindow{
       Layout.fillWidth: true
       Layout.fillHeight: true
       // radius: 5
-      color: "black"
+      // color: "black"
       //Loader动态加载组件用于切换页面
       Loader {
         id: myLoader
         anchors.fill: parent
-        source: "qrc:/qmlexample/qmlexample/menu/main.qml"
+        source: "qrc:/qmlexample/qmlexample/home.qml"
       }
     }
 
