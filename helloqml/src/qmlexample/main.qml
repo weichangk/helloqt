@@ -47,6 +47,7 @@ ApplicationWindow{
               id: gradient
               GradientStop { position: 0.0; color: "lightblue" }
               GradientStop { position: 1.0; color: "white" }
+              orientation: Gradient.Horizontal//横向渐变
           }
           gradient: menuList.currentIndex === index ? gradient : "white"
 

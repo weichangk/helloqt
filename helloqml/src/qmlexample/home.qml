@@ -5,6 +5,6 @@ Rectangle {
   anchors.fill: parent
   Text {
     anchors.centerIn: parent
-    text: "hello qml example"
+    text: "hello qml example (6.4.3)"
   }
 }

@@ -57,6 +57,7 @@
     <file>qmlexample/home.qml</file>
     <file>qmlexample/menu/main.qml</file>
     <file>qmlexample/graphic animation/main.qml</file>
+    <file>qmlexample/graphic animation/ColorExp.qml</file>
 
     <!-- img -->
     <file>qmlexample/resources/images/arrow.svg</file>

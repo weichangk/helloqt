@@ -5,7 +5,7 @@
     - 使用十六进制颜色
     - 使用Qt.rgba、Qt.hsla、Qt.darker、Qt.lighter、Qt.tint
   - 颜色-渐变（Gradient）
-  - 颜色-系统调色板（SystemPalette）colorGroup: Active Inactive Disabled
+  - 颜色-系统调色板（SystemPalette）
 - 图片
   - 图片-基础-本地图片
   - 图片-基础-网络图片

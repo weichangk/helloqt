@@ -201,11 +201,11 @@ Rectangle {
         radius: 5 //圆角
         border.width: 1
         border.color: "#E0E0E0" //边框
-        //背景色纵向渐变(6.4.3版本实现横向渐变的方法还没找到！！！)
         Gradient {
             id: gradient
             GradientStop { position: 0.0; color: "lightblue" }
             GradientStop { position: 1.0; color: "white" }
+            orientation: Gradient.Horizontal//横向渐变
         }
         gradient: menu5_listView.currentIndex === index ? gradient : "white"
 
