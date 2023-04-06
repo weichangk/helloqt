@@ -58,6 +58,7 @@
     <file>qmlexample/menu/main.qml</file>
     <file>qmlexample/graphic animation/main.qml</file>
     <file>qmlexample/graphic animation/ColorExp.qml</file>
+    <file>qmlexample/graphic animation/ImageExp.qml</file>
 
     <!-- img -->
     <file>qmlexample/resources/images/arrow.svg</file>
@@ -114,6 +115,7 @@
     <file>qmlexample/resources/images/vertical-gradient.png</file>
 
     <file>qmlexample/resources/images/home-48.png</file>
+    <file>qmlexample/resources/images/qtlogo.png</file>
 
   </qresource>
 </RCC>

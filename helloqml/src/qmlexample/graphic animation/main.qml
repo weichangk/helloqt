@@ -33,7 +33,7 @@ Column {
     }
     Rectangle {
       id: tab2
-      color: "blue"
+      ImageExp{}
     }
     Rectangle {
       id: tab3
