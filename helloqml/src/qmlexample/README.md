@@ -7,10 +7,9 @@
   - 颜色-渐变（Gradient）
   - 颜色-系统调色板（SystemPalette）
 - 图片
-  - 图片-基础-本地图片
-  - 图片-基础-网络图片
-  - 图片-边界图片（BorderImage）
-  - 图片-动态图片（AnimatedImage）-GIF
+  - 图片-基础
+  - 图片-边界（BorderImage）
+  - 图片-动态图片（AnimatedImage）
 - 缩放、旋转、平移变换
   - 属性缩放Scale
   - 属性旋转Rotation

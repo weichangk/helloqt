@@ -116,6 +116,9 @@
 
     <file>qmlexample/resources/images/home-48.png</file>
     <file>qmlexample/resources/images/qtlogo.png</file>
+    <file>qmlexample/resources/images/colors.png</file>
+    <file>qmlexample/resources/images/heart.jpg</file>
+    <file>qmlexample/resources/images/xiaoren.gif</file>
 
   </qresource>
 </RCC>
