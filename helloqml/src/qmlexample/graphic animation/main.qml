@@ -21,6 +21,10 @@ Column {
         width: implicitWidth
         text: qsTr("scale rotation transition example")
       }
+      TabButton {
+        width: implicitWidth
+        text: qsTr("state example")
+      }
   }
 
   StackLayout {
@@ -37,7 +41,11 @@ Column {
     }
     Rectangle {
       id: tab3
-      color: "green"
+      ScaleRotationTransformExp{}
+    }
+    Rectangle {
+      id: tab4
+      StateExp{}
     }
   }
 }

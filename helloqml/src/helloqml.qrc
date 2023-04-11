@@ -59,6 +59,8 @@
     <file>qmlexample/graphic animation/main.qml</file>
     <file>qmlexample/graphic animation/ColorExp.qml</file>
     <file>qmlexample/graphic animation/ImageExp.qml</file>
+    <file>qmlexample/graphic animation/ScaleRotationTransformExp.qml</file>
+    <file>qmlexample/graphic animation/StateExp.qml</file>
 
     <!-- img -->
     <file>qmlexample/resources/images/arrow.svg</file>

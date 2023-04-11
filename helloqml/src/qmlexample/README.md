@@ -10,12 +10,10 @@
   - 图片-基础
   - 图片-边界（BorderImage）
   - 图片-动态图片（AnimatedImage）
-- 缩放、旋转、平移变换
+- 缩放、旋转、变换
   - 属性缩放Scale
   - 属性旋转Rotation
-  - 高级变换（旋转）Transform
-  - 高级变换（缩放）Transform
-  - 高级变换（平移）Transform
+  - 高级变换（旋转、缩放、平移）Transform
 - 状态
   - 状态State
   - State搭配when属性和MouseArea使用
