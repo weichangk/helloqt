@@ -18,12 +18,11 @@
   - 状态State
   - State搭配when属性和MouseArea使用
 - 动画和过渡
-  - 动画和过渡-属性动画：
-  - 动画和过渡-使用预定义的目标和属性-1：PropertyAnimation
-  - 动画和过渡-使用预定义的目标和属性-2：SequentialAnimation ParallelAnimation  ColorAnimation
-  - 动画和过渡-在状态改变时使用过渡：transitions Transition
+  - 动画和过渡-属性动画 PropertyAnimation
+  - 动画和过渡-使用预定义的目标属性动画 PropertyAnimation on
+  - 动画和过渡-在状态改变时使用过渡 transitions Transition
   - 动画和过渡-使用默认的行为（Behavior）动画
-  - 动画和过渡-使用顺序动画组
+  - 动画和过渡-使用顺序或并行动画组 SequentialAnimation ParallelAnimation
   - 精灵动画（Sprite Animations）-动画过渡	SpriteSequence Sprite
   - 精灵动画（Sprite Animations）-动画无过渡 AnimatedSprite
   - 弹动效果（Flickable）-基础-没有区域限制

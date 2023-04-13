@@ -25,6 +25,10 @@ Column {
         width: implicitWidth
         text: qsTr("state example")
       }
+      TabButton {
+        width: implicitWidth
+        text: qsTr("animation example")
+      }
   }
 
   StackLayout {
@@ -46,6 +50,10 @@ Column {
     Rectangle {
       id: tab4
       StateExp{}
+    }
+    Rectangle {
+      id: tab5
+      AnimationExp{}
     }
   }
 }

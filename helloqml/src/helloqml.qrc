@@ -61,6 +61,7 @@
     <file>qmlexample/graphic animation/ImageExp.qml</file>
     <file>qmlexample/graphic animation/ScaleRotationTransformExp.qml</file>
     <file>qmlexample/graphic animation/StateExp.qml</file>
+    <file>qmlexample/graphic animation/AnimationExp.qml</file>
 
     <!-- img -->
     <file>qmlexample/resources/images/arrow.svg</file>
@@ -121,6 +122,9 @@
     <file>qmlexample/resources/images/colors.png</file>
     <file>qmlexample/resources/images/heart.jpg</file>
     <file>qmlexample/resources/images/xiaoren.gif</file>
-
+    <file>qmlexample/resources/images/warning.png</file>
+    <file>qmlexample/resources/images/critical.png</file>
+    <file>qmlexample/resources/images/switch.png</file>
+    <file>qmlexample/resources/images/fengche.png</file>
   </qresource>
 </RCC>
