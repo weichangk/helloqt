@@ -1,0 +1,52 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(helloqt6 VERSION 0.1 LANGUAGES CXX)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(Qt6 6.4.3 COMPONENTS Gui Quick REQUIRED)
+
+qt_add_executable(helloqt6app
+  src/main.cpp
+)
+
+list(APPEND MODULE_SOURCES
+  src/test.h
+  src/test.cpp
+)
+list(APPEND MODULE_QML_FILES
+  qml/main.qml
+)
+list(APPEND MODULE_JS_FILES
+  js/Helper.js
+)
+list(APPEND MODULE_ASSETS
+  assets/icon-back.svg
+)
+
+qt_add_qml_module(helloqt6app
+  URI helloqt6
+  VERSION 1.0
+  RESOURCE_PREFIX /weick.com
+  SOURCES
+    ${MODULE_SOURCES}
+  QML_FILES
+    ${MODULE_QML_FILES} ${MODULE_JS_FILES}
+  RESOURCES
+    ${MODULE_ASSETS}
+)
+
+set_target_properties(helloqt6app PROPERTIES
+  MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
+  MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+  MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+  MACOSX_BUNDLE TRUE
+  WIN32_EXECUTABLE TRUE
+)
+
+target_link_libraries(helloqt6app PRIVATE Qt6::Gui Qt6::Quick)
+
+install(TARGETS helloqt6app
+  BUNDLE DESTINATION .
+  LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})

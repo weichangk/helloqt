@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.16)
+project(helloqt6 LANGUAGES CXX)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_PREFIX_PATH "d:/Qt/6.4.3/msvc2019_64")
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(qrc ./helloqt6.qrc)
+aux_source_directory(./src src)
+find_package(Qt6 6.4.3 COMPONENTS Gui Quick REQUIRED)
+
+# Specify MSVC UTF-8 encoding
+add_compile_options("$<$<C_COMPILER_ID:MSVC>:/utf-8>")
+add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
+
+qt_add_executable(helloqt6app
+  WIN32 # If you need a terminal for debug, please comment this statement
+  ${qrc}
+  ${src}
+)
+
+target_link_libraries(helloqt6app PRIVATE Qt6::Gui Qt6::Quick)

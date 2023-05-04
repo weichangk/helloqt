@@ -15,6 +15,10 @@
 		{
 			"name": "helloqt",
 			"path": "helloqt"
+		},
+		{
+      "name": "helloqt6",
+			"path": "helloqt6"
 		}
 	],
 	"settings": {
