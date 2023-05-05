@@ -1,10 +1,24 @@
 <RCC>
   <qresource prefix="/weick.com/helloqt6/">
-    <!-- qml -->
-    <file>qml/main.qml</file>
+    <file>qml/Main.qml</file>
+    <file>qml/MainPage.qml</file>
+    <file>qml/UIimitate.qml</file>
+    <file>qml/PracticePage.qml</file>
+    <file>qml/ComponentPage.qml</file>
+    <file>qml/custom/CustomButton.qml</file>
+    <file>qml/custom/CustomCheckBox.qml</file>
+    <file>qml/custom/CustomCheckDelegate.qml</file>
+    <file>qml/custom/CustomComboBox.qml</file>
+    <file>qml/custom/CustomDashedBox.qml</file>
+    <file>qml/custom/CustomFourStateImage.qml</file>
+    <file>qml/custom/CustomHScrollIndicator.qml</file>
+    <file>qml/custom/CustomRadioButton.qml</file>
+    <file>qml/custom/CustomRadiusRectangle.qml</file>
+    <file>qml/custom/CustomSlider.qml</file>
+    <file>qml/custom/CustomTextField.qml</file>
+    <file>qml/custom/CustomVScrollIndicator.qml</file>
 
-    <!-- assets -->
     <file>assets/icon-back.svg</file>
-
+    <file>assets/home-48.png</file>
   </qresource>
 </RCC>

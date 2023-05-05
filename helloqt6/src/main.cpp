@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
   QQmlApplicationEngine engine;
 
   engine.addImportPath(":/weick.com");
-  engine.load(QUrl(u"qrc:/weick.com/helloqt6/qml/main.qml"_qs));
+  engine.load(QUrl(u"qrc:/weick.com/helloqt6/qml/Main.qml"_qs));
 
   return app.exec();
 }
