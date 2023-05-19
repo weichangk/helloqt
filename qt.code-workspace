@@ -17,8 +17,11 @@
 			"path": "helloqt"
 		},
 		{
-      "name": "helloqt6",
+			"name": "helloqt6",
 			"path": "helloqt6"
+		},
+		{
+			"path": "qmlelement"
 		}
 	],
 	"settings": {
