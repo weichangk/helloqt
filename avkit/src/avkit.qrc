@@ -1,0 +1,87 @@
+<RCC>
+  <qresource prefix="/">
+    <!-- qml -->
+    <file>RadiusRectangle.qml</file>
+    <file>CustomVScrollIndicator.qml</file>
+    <file>CustomHScrollIndicator.qml</file>
+    <file>CustomFourStateImage.qml</file>
+    <file>CustomComboBox.qml</file>
+    <file>CustomTextField.qml</file>
+    <file>CustomButton.qml</file>
+    <file>CustomCheckBox.qml</file>
+    <file>CustomCheckDelegate.qml</file>
+    <file>CustomRadioButton.qml</file>
+    <file>CustomDashedBox.qml</file>
+    <file>CustomSlider.qml</file>
+
+    <file>AddFileIllustration.qml</file>
+    <file>TimeEdit4.qml</file>
+    <file>VideoPalyControl.qml</file>
+    <file>VideoWorkList.qml</file>
+
+    <file>main.qml</file>
+    <file>MainPage.qml</file>
+    <file>VideoFunc.qml</file>
+    <file>AudioFunc.qml</file>
+    <file>MyFiles.qml</file>
+    <file>VideoConverterPage.qml</file>
+    <file>VideoConverterList.qml</file>
+    <file>VideoConverterParam.qml</file>
+    <file>VideoCompressorPage.qml</file>
+    <file>VideoCompressorParam.qml</file>
+    <file>VideoCompressorList.qml</file>
+    <file>VideoMergePage.qml</file>
+    <file>VideoMergeList.qml</file>
+    <file>VideoToGifPage.qml</file>
+    <file>VideoToGifList.qml</file>
+    <file>VideoToGifParam.qml</file>
+
+    <!-- img -->
+
+    <!-- main logo -->
+    <!-- https://icons8.com/icon/Lt8qc2EvLKee/video -->
+    <file>resources/images/logo28.png</file>
+    <file>resources/images/logo30.png</file>
+    <file>resources/images/logo32.png</file>
+    <file>resources/images/home-48.png</file>
+
+    <!-- titleBar -->
+    <file>resources/images/icon24_close.png</file>
+    <file>resources/images/icon24_menu.png</file>
+    <file>resources/images/icon24_mini.png</file>
+    <file>resources/images/icon24_feedback.png</file>
+    <file>resources/images/icon24_account_off.png</file>
+
+    <!-- video func -->
+    <file>resources/images/icon40_converter.png</file>
+
+    <!-- videoConverterList decoration -->
+    <file>resources/images/thumbnail.jpg</file>
+    <file>resources/images/icon32_arrow.png</file>
+    <file>resources/images/icon16_resolution_decoration.png</file>
+    <file>resources/images/icon16_size_decoration.png</file>
+    <file>resources/images/icon16_time_decoration.png</file>
+    <file>resources/images/icon16_video_decoration.png</file>
+
+    <file>resources/images/illustration160x120_add.png</file>
+    <file>resources/images/icon24_thumbnail.png</file>
+    <file>resources/images/icon24_edit.png</file>
+    <file>resources/images/icon24_file.png</file>
+    <file>resources/images/icon24_player_play.png</file>
+    <file>resources/images/icon24_player_pause.png</file>
+    <file>resources/images/icon24_frame_next.png</file>
+    <file>resources/images/icon24_frame_previous.png</file>
+    <file>resources/images/icon24_refresh.png</file>
+    <file>resources/images/icon24_add_playlist.png</file>
+    <file>resources/images/icon24_delete.png</file>
+    <file>resources/images/icon24_trim.png</file>
+    <file>resources/images/icon24_previous.png</file>
+    <file>resources/images/icon16_arrow_down.png</file>
+    <file>resources/images/icon16_arrow_up.png</file>
+    <file>resources/images/input12_split_right_down.png</file>
+    <file>resources/images/input12_split_right_up.png</file>
+    <file>resources/images/slider_mini_left.png</file>
+    <file>resources/images/slider_mini_right.png</file>
+
+  </qresource>
+</RCC>
